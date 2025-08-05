@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Portofolio - Reval Adiyasa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- HEADER with navigation -->
+  <header class="w-full fixed top-0 left-0 z-50 bg-gradient-to-b from-[#1b2356dd] to-transparent-md">
+    <nav id="navbar" class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-white font-extrabold text-2xl select-none tracking-widest">RA</div>
+      <ul class="hidden md:flex gap-12 font-semibold text-sm text-gray-300">
+        <li><a href="#home" class="nav-link hover:text-indigo-400">Home</a></li>
+        <li><a href="#about" class="nav-link hover:text-indigo-400">About</a></li>
+        <li><a href="#skill" class="nav-link hover:text-indigo-400">Skill</a></li>
+        <li><a href="#project" class="nav-link hover:text-indigo-400">Project</a></li>
+      </ul>
+      <a href="#contact" class="btn-get-in-touch hidden md:inline-block">Let's Work Together</a>
+
+      <!-- Mobile menu button -->
+      <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false" class="md:hidden text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-b from-[#1b2356cc] to-transparent backdrop-blur-md">
+      <ul class="flex flex-col gap-6 px-6 py-4 text-gray-300 text-lg font-semibold">
+        <li><a href="#home" class="nav-link block">Home</a></li>
+        <li><a href="#about" class="nav-link block">About</a></li>
+        <li><a href="#skill" class="nav-link block">Skill</a></li>
+        <li><a href="#project" class="nav-link block">Project</a></li>
+        <li><a href="#contact" class="block btn-get-in-touch text-center py-2">Let's Work Together</a></li>
+      </ul>
+    </div>
+  </header>
+
+<main class="pt-24 max-w-7xl mx-auto px-6 space-y-36">
+
+    <!-- HOME Section -->
+    <section id="home" class="flex flex-col-reverse md:flex-row justify-between items-center gap-12 md:gap-20">
+      <!-- Text content -->
+      <div class="md:w-1/2 space-y-4 max-w-xl">
+        <span class="uppercase font-semibold text-xs tracking-wider bg-indigo-500 inline-block px-2 py-0.5 rounded">Reval Adiyasa</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-white">
+          HELLO! I’M REVAL
+          <br />
+          <span class="text-indigo-300 opacity-60">I’M 3D GENERALIST</span>
+        </h1>
+        <p class="text-gray-300 leading-relaxed">
+          Spesialis di Blender, berfokus pada pembuatan game asset dan animasi film dengan gaya stylized dan low poly. Terbuka untuk freelance dan remote work.
+        </p>
+        <div class="flex flex-wrap gap-4 items-center">
+          <a href="https://drive.google.com/file/d/1hkypjt2_xJwO9yq8N9qTfZmHvR3aomz_/view?usp=sharing" class="btn-get-in-touch inline-flex items-center gap-2">
+            Download CV <span aria-hidden="true">→</span>
+          </a>
+          <nav aria-label="Social media links" class="flex space-x-3 text-white">
+            <a href="mailto:revaladiyasa@gmail.com" target="_blank" rel="noopener noreferrer" title="Email" class="social-icon hover:text-indigo-300" aria-label="Email">
+              <i class="fas fa-envelope fa-2x"></i>
+            </a>
+            <a href="https://instagram.com/adiyasa.reval" target="_blank" rel="noopener noreferrer" title="Instagram" class="social-icon hover:text-indigo-300" aria-label="Instagram">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://linkedin.com/in/revaladiyasa" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon hover:text-indigo-300" aria-label="LinkedIn">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <!-- Image circular -->
+      <div class="circle-image max-w-xl h-auto md:max-w-xl md:h-auto flex-shrink-0 overflow-hidden relative">
+        <img src="Assets/profile photo.png"
+             class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/288x288?text=Image+Not+Found';" />
+      </div>
+    </section>
+
+    <!-- ABOUT ME Section -->
+    <section id="about" class="relative max-w-7xl mx-auto px-6 md:flex md:items-center md:gap-12">
+      <!-- Decorative rings -->
+      <span class="decorative-line-1"></span>
+      <span class="decorative-line-2"></span>
+
+      <!-- Image about me -->
+      <div class="md:w-1/3 rounded-3xl overflow-hidden shadow-lg border-4 border-indigo-400 bg-indigo-100">
+        <img src="Assets/gajah.png"
+             class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/400x400?text=Image+Not+Found';" />
+      </div>
+      <!-- Text about me -->
+      <article class="md:w-2/3 text-gray-200 mt-10 md:mt-0 max-w-3xl">
+        <span class="uppercase font-semibold bg-indigo-800 text-indigo-300 px-2 py-1 rounded text-xs tracking-widest mb-3 inline-block">About Me</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4 text-white">
+          I AM AVAILABLE FOR
+          <span class="text-indigo-300 opacity-75">3D GENERALIST</span>
+          <span class="text-indigo-400 font-medium">PROJECT</span>
+        </h2>
+        <p class="leading-relaxed text-gray-300 mb-6">
+          Halo! Saya Reval Adiyasa, seorang 3D Artist & Generalist yang berdedikasi dalam menciptakan karya visual yang unik dan berkualitas. Saya mengoperasikan Blender sebagai software utama untuk memproduksi berbagai konten 3D, mulai dari game asset hingga animasi film. Dengan gaya yang cenderung stylized dan low poly, saya fokus menciptakan visual yang tidak hanya menarik secara estetika, tetapi juga ringan dan optimal untuk kebutuhan produksi. Saya menikmati proses kreatif dari awal hingga akhir, mulai dari modeling, texturing, hingga rendering.<br><br>
+          Saat ini saya terbuka untuk proyek freelance maupun kerja remote. Jika Anda mencari kolaborator yang fleksibel, kreatif, dan profesional di bidang 3D, saya siap membantu mewujudkan visi Anda.
+        </p>
+        <a href="#contact" class="btn-get-in-touch inline-flex items-center gap-2">
+          Get in Touch <span aria-hidden="true">→</span>
+        </a>
+      </article>
+    </section>
+
+    <!-- SKILLS Section -->
+    <section id="skill">
+      <div class="header skill-head">
+      <span class="uppercase font-semibold bg-indigo-800 text-indigo-300 px-3py-1 rounded text-xs tracking-widest mb-2">My Skills</span>
+      <h3 class="text-3xl font-extrabold text-white mb-7">SKILLS AREA</h3>
+      </div>
+
+      <div class="skill-main">
+        <div class="skill-bar">
+          <div class="info">
+            <p>Blender</p>
+            <p class="percent">90%</p>
+          </div>
+          <div class="bar">
+            <span class="blender"></span>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+            <p>3D Modeling</p>
+            <p class="percent">80%</p>
+          </div>
+          <div class="bar">
+            <span class="Modeling"></span>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+            <p>Adobe Substance Painter</p>
+            <p class="percent">60%</p>
+          </div>
+          <div class="bar">
+            <span class="Substance"></span>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+            <p>Lighting & Rendering</p>
+            <p class="percent">70%</p>
+          </div>
+          <div class="bar">
+            <span class="LnR"></span>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+            <p>Adobe After Effect</p>
+            <p class="percent">60%</p>
+          </div>
+          <div class="bar">
+            <span class="AE"></span>
+          </div>
+        </div>
+         <div class="skill-bar">
+          <div class="info">
+            <p>Texturing & UV Unwraping</p>
+            <p class="percent">80%</p>
+          </div>
+          <div class="bar">
+            <span class="texturing"></span>
+          </div>
+        </div>
+         <div class="skill-bar">
+          <div class="info">
+            <p>Adobe Photoshop</p>
+            <p class="percent">60%</p>
+          </div>
+          <div class="bar">
+            <span class="Photoshop"></span>
+          </div>
+        </div>
+         <div class="skill-bar">
+          <div class="info">
+            <p>Animation & Rigging</p>
+            <p class="percent">80%</p>
+          </div>
+          <div class="bar">
+            <span class="Animation"></span>
+          </div>
+        </div>
+         <div class="skill-bar">
+          <div class="info">
+            <p>Adobe Premiere</p>
+            <p class="percent">60%</p>
+          </div>
+          <div class="bar">
+            <span class="Premiere"></span>
+          </div>
+        </div>
+                 <div class="skill-bar">
+          <div class="info">
+            <p>Editing</p>
+            <p class="percent">60%</p>
+          </div>
+          <div class="bar">
+            <span class="Editing"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS Section -->
+    <section id="project" class="max-w-7xl mx-auto px-6 space-y-4">
+      <span class="uppercase font-semibold bg-indigo-800 text-indigo-300 px-3 py-1 rounded text-xs tracking-widest">My Work</span>
+      <h4 class="text-3xl font-extrabold text-white mb-4">RECENT PROJECT</h4>
+
+      <!-- Categories -->
+      <nav class="category-nav mb-8 flex space-x-6 border-b border-indigo-700 pb-2 text-sm sm:text-base select-none">
+        <span class="category-btn active" data-category="all" tabindex="0">All</span>
+        <span class="category-btn" data-category="modelling" tabindex="0">Modeling</span>
+        <span class="category-btn" data-category="animation" tabindex="0">Animation</span>
+      </nav>
+
+      <!--Project grid-->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <!-- Project cards as placeholders -->
+        <!--Modelling-->
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="modelling">
+          <a href="https://skfb.ly/pzIUB"><img src="Assets/project foto/car 2.png" /></a>
+        </article>
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="modelling">
+          <a href="https://skfb.ly/pzIRL"><img src="Assets/project foto/madza.png" /></a>
+        </article>
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="modelling">
+          <a href="https://skfb.ly/psFzu"><img src="Assets/project foto/keris revisi 1.png" /></a>
+        </article>
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="modelling">
+          <img src="Assets/project foto/dapur.png" />
+        </article>
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="modelling">
+          <img src="Assets/project foto/ga.png" />
+        </article>
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="modelling">
+          <img src="Assets/project foto/untitled(1).png" />
+        </article>
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="modelling">
+          <img src="Assets/project foto/Screenshot 2024-12-09 215540.png" />
+        </article>
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="modelling">
+          <img src="Assets/project foto/Untitled.png" />
+        </article>
+        
+        
+        <!--Animation-->
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="animation">
+          <a href="https://youtu.be/1BoODLEYJlQ"><img src="Assets/thumbnail animation ctgry/panda.jpg" /></a>
+        </article>
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="animation">
+          <a href="https://youtu.be/D_89NXesJeA"><img src="Assets/thumbnail animation ctgry/parfum.png" /></a>
+        </article>
+        <article class="project-card overflow-hidden rounded-xl shadow-lg" data-category="animation">
+          <a href="https://youtu.be/yzVUs6w13Qs"><img src="Assets/thumbnail animation ctgry/sleep-walking.jpg" /></a>
+        </article>
+
+
+
+        <!--<div class="project-card overflow-hidden rounded-xl shadow-lg">
+            <a href="https://skfb.ly/pzIUB"><img src="Assets/project foto/car 2.png" /></a>
+          </div>
+        <div class="project-card overflow-hidden rounded-xl shadow-lg">
+          <img src="Assets/project foto/dapur.png" />
+        </div>
+        <div class="project-card overflow-hidden rounded-xl shadow-lg">
+          <img src="Assets/project foto/ga.png" />
+        </div>
+        <div class="project-card overflow-hidden rounded-xl shadow-lg">
+          <a href="https://skfb.ly/psFzu"><img src="Assets/project foto/keris revisi 1.png" /></a>
+        </div>
+        <div class="project-card overflow-hidden rounded-xl shadow-lg">
+          <a href="https://skfb.ly/pzIRL"><img src="Assets/project foto/madza.png" /></a>
+        </div>
+        <div class="project-card overflow-hidden rounded-xl shadow-lg">
+          <img src="Assets/project foto/untitled(1).png" />
+        </div>
+        <div class="project-card overflow-hidden rounded-xl shadow-lg">
+          <img src="Assets/project foto/Screenshot 2024-12-09 215540.png" />
+        </div>
+        <div class="project-card overflow-hidden rounded-xl shadow-lg">
+          <img src="Assets/project foto/Untitled.png" />
+        </div>-->
+      </div>
+    </section>
+
+    <!-- CONTACT ME Section -->
+    <section id="contact" class="max-w-7xl mx-auto px-6 pb-24 flex flex-col lg:flex-row gap-12 lg:gap-28 text-gray-300 select-none">
+      <div class="lg:w-1/2 space-y-6">
+        <span class="uppercase font-semibold bg-indigo-800 text-indigo-300 px-3 py-1 rounded text-xs tracking-widest select-text">Contact Me</span>
+        <h5 class="text-3xl font-extrabold text-white select-text">LET’S WORK TOGETHER!</h5>
+        <p class="italic text-indigo-400 tracking-wide select-text">Ready to transform your ideas into reality? Ready for a “Creative Journey”? </p>
+
+        <article class="space-y-6 select-text">
+          <p>
+            Jika Anda tertarik untuk berkolaborasi dalam project kreatif atau membutuhkan expertise di bidang animasi 3D, feel free to contact me:
+          </p>
+          <ul class="space-y-3 leading-relaxed">
+            <li class="flex items-center gap-3">
+              <i class="fas fa-envelope fa-2x"></i>
+              <span class="font-semibold">E-Mail</span> 
+              <a href="mailto:revaladiyasa@gmail.com" class="underline hover:text-indigo-300">revaladiyasa@gmail.com</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fab fa-whatsapp fa-2x"></i>
+              <span class="font-semibold">WhatsApp</span>
+              <a href="https://wa.me/6285527378173" target="_blank" class="underline hover:text-indigo-300">+6285527378173</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fab fa-instagram fa-2x"></i>
+              <span class="font-semibold">Instagram</span> 
+              <a href="https://instagram.com/adiyasa.reval" class="underline hover:text-indigo-300">@adiyasa.reval</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fab fa-linkedin fa-2x"></i>
+              <span class="font-semibold">LinkedIn</span> 
+              <a href="https://linkedin.com/in/revaladiyasa" class="underline hover:text-indigo-300" target="_blank" rel="noopener noreferrer">linkedin.com/in/revaladiyasa</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <form id="contact-form" class="contact-form lg:w-1/2 flex flex-col gap-6 text-gray-900" aria-label="Send a message form">
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Name" autocomplete="name" aria-required="true" />
+        
+        <label for="email" class="sr-only">E-mail address</label>
+        <input type="email" id="email" name="email" required placeholder="E-mail address" autocomplete="email" aria-required="true" />
+        
+        <label for="message" class="sr-only">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Message" aria-required="true"></textarea>
+
+        <button type="submit" aria-label="Submit contact form">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <script>
+    const categoryButtons = document.querySelectorAll(".category-btn");
+    const projects = document.querySelectorAll(".project-card");
+
+function filterProjects(category) {
+      if (category === "all") {
+        projects.forEach((p) => {
+          p.style.display = "block";
+        });
+      } else {
+        projects.forEach((p) => {
+          if (p.dataset.category === category) {
+            p.style.display = "block";
+          } else {
+            p.style.display = "none";
+          }
+        });
+      }
+    }
+
+categoryButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // Remove active class from all buttons
+        categoryButtons.forEach((b) => b.classList.remove("active"));
+        // Add active class to clicked button
+        btn.classList.add("active");
+        // Filter projects by chosen category
+        filterProjects(btn.dataset.category);
+      });
+      // Accessibility: allow keyboard navigation
+      btn.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          btn.click();
+        }
+      });
+    });
+
+
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      const expanded = menuBtn.getAttribute('aria-expanded') === 'true' || false;
+      menuBtn.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Contact form submission handler
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Simple form validation could be here or extended with fetch/ajax to submit data
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill all the fields');
+        return;
+      }
+
+      // For demo: alert success and reset form
+      alert('Thank you, ' + name + '! Your message has been sent.');
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>  
